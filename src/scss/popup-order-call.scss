@@ -1,0 +1,107 @@
+.popup-order-call {
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 100;
+  max-width: 320px;
+  height: 100%;
+  @media screen and (min-width: 1366px) {
+    right: 0;
+    max-width: 440px;
+  }
+  .popup-order-call__wrapper {
+    padding: 24px 16px 75px;
+  }
+  .popup-order-call__button-close {
+    margin-bottom: 40px;
+    @media screen and (min-width: 1366px) {
+      position: absolute;
+      left: -70px;
+      top: 19px;
+    }
+  }
+  .popup-order-call__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .popup-order-call__heading {
+      position: relative;
+      font-size: 24px;
+      font-weight: 700;
+      &::before {
+        color: #7e7e82;
+        content: ' ';
+        left: -16px;
+        top: -2px;
+        position: absolute;
+        width: 4px;
+        height: 32px;
+        border-radius: 0 5px 5px 0;
+        background-color: #41f6d7;
+      }
+    }
+    .popup-order-call__input-name {
+			padding: 12px 16px;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+    }
+    .popup-order-call__input-tel {
+			padding: 12px 16px;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+    }
+    .popup-order-call__input-email {
+			padding: 12px 16px;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+    }
+    .popup-order-call__textarea-message {
+			width: 288px;
+        height: 118px;
+        padding: 12px 16px;
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+        outline: none;
+    }
+    .popup-order-call__approval {
+			font-size: 14px;
+        font-weight: 500;
+        color: #7e7e82;
+      .popup-order-call__link-personal-data {
+				color: #ff3e79;
+      }
+      .popup-order-call__link-privacy-policy {
+				color: #ff3e79;
+      }
+    }
+
+    .popup-order-call__button-form {
+			margin-top: 3px;
+        margin-left: auto;
+        background-color: #ff3e79;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        width: 136px;
+        height: 32px;
+        border-radius: 20px;
+      .popup-order-call__button-icon {
+				margin-top: 3px;
+          margin-left: 10px;
+      }
+    }
+  }
+}
+.popup-feedback--deactive {
+	display: block;
+	@media screen and (max-width: 1366px) {
+    left: 0;
+  }
+	
+}
+.popup-feedback--active {
+	display: none;
+}
+
+.popup-overflow {
+	overflow: hidden;
+}

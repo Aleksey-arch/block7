@@ -1,0 +1,86 @@
+.slider-brands {
+	margin-bottom: 24px;
+	
+	@media screen and (min-width: 767px) {
+		margin-bottom: 32px;
+	}
+}
+
+.slider-header-brands {
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+  border-top: 1px solid #d9fff5;
+  padding: 16px;
+}
+
+.slider-heading-brands {
+  color: #7e7e82;
+  text-transform: uppercase;
+}
+
+.swiper-brands {
+}
+
+.swiper-wrapper--brands {
+	display: flex;
+  padding-left: 16px;
+  padding-top: 16px;
+	@media screen and (min-width: 767px) {
+		overflow: hidden;
+	}
+}
+
+.swiper-wrapper--brands-active {
+	@media screen and (min-width: 767px) {
+		max-height: 160px;
+	}
+}
+.swiper-wrapper--brands-deactive {
+	@media screen and (min-width: 767px) {
+		max-height: auto;
+	}
+}
+
+.swiper-slide--brands {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  max-width: 240px;
+  max-height: 72px;
+  padding: 16px;
+  @media screen and (min-width: 767px) {
+		margin-right: 24px;
+		margin-bottom: 16px;
+    padding: 16px;
+		
+	}
+}
+
+.swiper-card--brands {
+  display: flex;
+  align-items: center;
+}
+.swiper-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+}
+
+.swiper-brands__button {
+  margin-top: 24px;
+  margin-left: 16px;
+  background-color: #fbfbfb;
+  cursor: pointer;
+  @media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+.swiper-brands__button--text {
+  color: #1b1c21;
+}
+.swiper-brands__img {
+  margin-right: 9px;
+}
+.swiper-brands__img-transform {
+  transform: rotate(180deg);
+}

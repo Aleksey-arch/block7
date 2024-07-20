@@ -1,0 +1,137 @@
+li,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.popup-blur {
+  -webkit-filter: blur(10px) grayscale(50%);
+  filter: blur(5px) grayscale(50%);
+}
+
+.menu {
+  background-color: #ffffff;
+  min-width: 320px;
+  position: absolute;
+  top: 0;
+  height: auto;
+
+  z-index: 100;
+
+  
+  @media screen and (min-width: 1366px) {
+    position: sticky;
+  }
+
+  .container-menu {
+    padding: 0 16px;
+
+    @media screen and (min-width: 767px) {
+      padding: 0 24px;
+    }
+    .menu__header {
+      display: flex;
+      padding-top: 16px;
+      margin-bottom: 24px;
+      align-items: center;
+      .menu__burger-close {
+        cursor: pointer;
+        margin-right: 16px;
+        @media screen and (min-width: 1366px) {
+          display: none;
+        }
+      }
+      .menu__logo {
+        margin-right: auto;
+      }
+      .menu__search {
+      }
+    }
+
+    .menu-nav {
+      margin-bottom: 32px;
+      @media screen and (min-width: 767px) {
+        margin-bottom: 268px;
+      }
+      .menu__items {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .menu__item {
+          position: relative;
+          text-decoration: none;
+        }
+        .menu__link {
+          text-decoration: none;
+          color: #1b1c21;
+          &:hover {
+            color: #7e7e82;
+          }
+          &:hover:before {
+            color: #7e7e82;
+            content: ' ';
+            left: -16px;
+            top: -4px;
+            position: absolute;
+            width: 4px;
+            height: 32px;
+            border-radius: 0 5px 5px 0;
+            background-color: #41f6d7;
+            @media screen and (min-width: 767px) {
+              left: -24px;
+            }
+          }
+        }
+      }
+    }
+
+    .menu__footer {
+      padding-bottom: 32px;
+      .menu__info {
+        display: flex;
+        flex-direction: column;
+        .menu__icons {
+          display: flex;
+          gap: 16px;
+          margin-bottom: 16px;
+        }
+        .menu__link-icon {
+        }
+      }
+      .menu__link-email {
+        margin-bottom: 12px;
+        color: #1b1c21;
+      }
+      .menu__link-tel {
+        margin-bottom: 8px;
+        color: #1b1c21;
+        font-weight: 700;
+        font-size: 24px;
+        @media screen and (min-width: 767px) {
+          margin-bottom: 40px;
+        }
+      }
+      .menu__lenguage {
+        display: flex;
+        gap: 7px;
+        .menu__link-leng {
+          color: #1b1c21;
+          &:hover {
+            color: #7e7e82;
+          }
+        }
+      }
+    }
+  }
+}
+.menu-deactive {
+  left: 100%;
+  @media screen and (max-width: 1366px) {
+    display: none;
+  }
+}
+.menu-active {
+  left: 0;
+}

@@ -1,0 +1,234 @@
+.slider-price {
+  margin-bottom: 24px;
+  @media screen and (min-width: 767px) {
+    margin-bottom: 32px;
+  }
+  .slider-price__header {
+    background: linear-gradient(to right, #f8f8f8, #ffffff);
+    border-top: 1px solid #d9fff5;
+    padding: 16px;
+  }
+  .slider-price__heading {
+    color: #7e7e82;
+    text-transform: uppercase;
+  }
+  .swiper-price {
+    width: auto;
+    @media screen and (max-width: 767px) {
+      overflow: hidden;
+    }
+
+    .swiper-price__wrapper {
+      display: flex;
+      padding-left: 16px;
+      padding-top: 16px;
+      width: auto;
+
+      @media screen and (min-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media screen and (min-width: 767px) {
+        padding: 16px;
+      }
+      @media screen and (min-width: 767px) {
+        flex-direction: column;
+      }
+      .swiper-price__services-info {
+        margin-bottom: 16px;
+        gap: 16px;
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+        @media screen and (min-width: 767px) {
+          min-width: 720px;
+          margin: 0 auto;
+          // fdsfsd
+        }
+        @media screen and (min-width: 890px) {
+          min-width: 850px;
+          margin: 0 auto;
+          // dfsdfsdf
+        }
+        @media screen and (min-width: 1050px) {
+          min-width: 950px;
+          margin: 0 auto;
+          // dfsdfsdf
+        }
+        @media screen and (min-width: 1150px) {
+          min-width: 1070px;
+          margin: 0 auto;
+          // dfsdfsdf
+        }
+
+        .swiper-price__list {
+          display: flex;
+
+          &:nth-child(1) {
+            margin-left: 16px;
+          }
+        }
+        .swiper-price__elem:nth-child(1) {
+          @media screen and (min-width: 767px) {
+            margin-right: 300px;
+          }
+          @media screen and (min-width: 890px) {
+            margin-right: 394px;
+          }
+          @media screen and (min-width: 1050px) {
+            margin-right: 444px;
+          }
+          @media screen and (min-width: 1150px) {
+            margin-right: 458px;
+          }
+        }
+        .swiper-price__elem:nth-child(2) {
+          @media screen and (min-width: 767px) {
+            margin-right: 30px;
+          }
+          @media screen and (min-width: 890px) {
+            margin-right: 25px;
+          }
+          @media screen and (min-width: 1050px) {
+            margin-right: 76px;
+          }
+          @media screen and (min-width: 1150px) {
+            margin-right: 90px;
+          }
+        }
+      }
+
+      .swiper-price__slide {
+        background-color: #ffffff;
+        
+        max-width: 260px;
+        height: auto;
+        padding: 16px;
+
+        @media screen and (max-width: 767px) {
+          border-bottom: 1px solid #eaeaea;
+        border-radius: 6px 6px 0 0;
+        }
+        @media screen and (min-width: 767px) {
+          min-width: 720px;
+          margin: 0 auto;
+          border-bottom: 1px solid #eaeaea;
+          &:nth-child(2) {
+            border-bottom: 1px solid #eaeaea;
+            border-radius: 6px 6px 0 0;
+          }
+          &:last-child {
+            border-bottom: 1px solid #eaeaea;
+            border-radius: 0 0 6px 6px;
+          }
+        }
+        @media screen and (min-width: 890px) {
+          min-width: 850px;
+          margin: 0 auto;
+          // dfsdfsdf
+        }
+        @media screen and (min-width: 1050px) {
+          min-width: 950px;
+          margin: 0 auto;
+          // dfsdfsdf
+        }
+        @media screen and (min-width: 1150px) {
+          min-width: 1070px;
+          margin: 0 auto;
+          // dfsdfsdf
+        }
+        .swiper-price__card {
+          display: flex;
+          flex-direction: column;
+
+          .swiper-price__card-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media screen and (min-width: 767px) {
+              flex-direction: row;
+            }
+            .swiper-price__card-elem {
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+              @media screen and (min-width: 767px) {
+                align-self: center;
+              }
+
+              .swiper-price__card-heading {
+                color: #7e7e82;
+                font-size: 14px;
+                @media screen and (min-width: 767px) {
+                  display: none;
+                }
+              }
+              .swiper-price__card-description {
+                font-size: 14px;
+              }
+              .swiper-price__card-elem-list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .swiper-price__card-elem-element {
+                }
+                .swiper-price__card-elem-button {
+                  display: flex;
+                  justify-content: space-between;
+                  border-radius: 20px;
+                  align-items: center;
+                  padding: 4px 12px;
+                  background-color: #ff3e79;
+                  width: 119px;
+                  height: 32px;
+                  @media screen and (min-width: 767px) {
+                    margin-left: 20px;
+                  }
+                  @media screen and (min-width: 1150px) {
+                    margin-left: 111px;
+                  }
+                  .swiper-price__card-elem-link {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    color: #ffffff;
+                    line-height: 8px;
+                    font-weight: 700;
+                  }
+                  .swiper-price__card-elem-img {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.slider-price__description-container {
+  padding: 16px;
+  max-width: 280px;
+  @media screen and (min-width: 767px) {
+    padding: 24px;
+    max-width: 421px;
+  }
+  .slider-price__description-text {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .slider-price__description-button {
+    max-width: 192px;
+    @media screen and (min-width: 767px) {
+      max-width: 330px;
+    }
+    .slider-price__description-link {
+      color: #1b1c21;
+      font-weight: 500;
+      .slider-price__description-icon {
+        margin-top: 5px;
+        margin-left: 8px;
+      }
+    }
+  }
+}
